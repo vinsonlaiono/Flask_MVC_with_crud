@@ -10,7 +10,7 @@ class Index:
 
         users = user.retrieveAllUsers()
         print(users)
-        return render_template("welcome.html", users = users)
+        return render_template("users.html", users = users)
     
     def add_user(app, newUser):
         print("*"*80)

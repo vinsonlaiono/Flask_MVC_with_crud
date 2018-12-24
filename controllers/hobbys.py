@@ -4,9 +4,9 @@ from models.models import Hobby
 hobby = Hobby()
 
 class Hobbys:
-    """Product Controller"""
+    """Hobby Controller"""
 
     def index(app):
         content = {}
         content['hobby']= hobby.retrieveAllHobbies()
-        return render_template("product.html", content=content)                     
+        return render_template("hobbys.html", content=content)                     

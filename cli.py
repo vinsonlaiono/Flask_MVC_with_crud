@@ -19,13 +19,10 @@ def hobbysIndex():
 
 @app.route('/add_user', methods=['POST'])
 def add_user():
-    print("*"*80)
-
     newUser = {
         'first_name': request.form['fname'],
         'last_name': request.form['lname'],
     }
-    print(newUser, "In Server")
     return index.add_user(newUser)
 
 @app.route('/delete/<id>')
