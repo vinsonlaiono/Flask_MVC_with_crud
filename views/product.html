@@ -11,12 +11,12 @@
 <body>
     <div class="container">
 
-        <h1>Products
+        <h1>Hobbys
         </h1>
         
         <a href="/">Home</a>
-        {% for prod in content['hobby'] %}
-        <p>{{ prod.id }} {{ prod.hobby }}</p>
+        {% for hobby in content['hobby'] %}
+        <p>{{ hobby.id }} {{ hobby.hobby }}</p>
         {% endfor %}
     </div>
 
